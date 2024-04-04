@@ -85,7 +85,7 @@ twoStageLCA <- function(dataset, group, comp_num, weighting = NULL, backup = 0, 
     ## compute the component for each dataset
     data_comp_total = list()
     for(i in 1 : N){
-        data_comp_total[[i]] = svds(dataset[[i]], data_comp_num[i])$u
+        data_comp_total[[i]] = svd(dataset[[i]])$u
     }
 
     data_comp_total = weightData(data_comp_total, weighting)
