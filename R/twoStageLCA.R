@@ -88,7 +88,7 @@ twoStageLCA <- function(dataset, group, comp_num, weighting = NULL, backup = 0, 
         print("line88")
         print(names(datasets)[i])
         print(comp_num[i])
-        data_comp_total[[i]] = svds(dataset[[i]], comp_num[i])$u
+        data_comp_total[[i]] = svds(dataset[[i]], min(nrow(dataset[[i]]),ncol(dataset[[i]]))$u
     }
 
     data_comp_total = weightData(data_comp_total, weighting)
