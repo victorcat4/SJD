@@ -87,6 +87,7 @@ twoStageLCA <- function(dataset, group, comp_num, weighting = NULL, backup = 0, 
     for(i in 1 : N){
         print("line88")
         print(names(datasets)[i])
+        print(data_comp_num[i])
         data_comp_total[[i]] = svds(dataset[[i]], data_comp_num[i])$u
     }
 
