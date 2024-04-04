@@ -24,7 +24,7 @@ To install this package in R, run the following commands:
 
 ```R
 library(devtools)
-install_github("CHuanSite/SJD")
+devtools::install_github("victorcat4/SJD")
 ```
 
 ## Example Use
