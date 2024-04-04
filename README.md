@@ -23,7 +23,6 @@ All SJD algorithms require the same input data format: dataset_list, group and c
 To install this package in R, run the following commands:
 
 ```R
-library(devtools)
 devtools::install_github("victorcat4/SJD")
 ```
 
